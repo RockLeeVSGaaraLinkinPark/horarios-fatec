@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horários de Aulas</title>
+  <link rel="stylesheet" href="../styles/QuadroDeHorarios.css" />
+  <link rel="stylesheet" href="../styles/header-footer.css">
+  <script defer src="../scripts/header-footer.js"></script>
+</head>
+
+<body>
+
+  <div id="aulas-container">
+    <div class="header-flex">
+      <img src="..\images\imagcale.png" class="imgcal" />
+      <h2 id="horarios">Grade de Horários</h2>
+    </div>
+  </div>
+
+  <div id="turma-container">
+    <div><span id="curso-nome"></span></div>
+    <div><span>Turma: </span><span id="turma-nome"></span></div>
+    <div><span>Período: </span><span id="periodo-nome"></span></div>
+  </div>
+
+  <!-- Tabela de horários -->
+  <div class="tabela-container">
+    <table class="tabela-aulas">
+      <thead>
+        <tr>
+          <th class="head-horario" id="inicio">Início</th>
+          <th class="head-horario" id="fim">Fim</th>
+          <th>Segunda-feira</th>
+          <th>Terça-feira</th>
+          <th>Quarta-feira</th>
+          <th>Quinta-feira</th>
+          <th>Sexta-feira</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-corpo" class="tabela-corpo">
+        <!-- Preenchido via JS -->
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- Professores e matérias mobile -->
+  <div id="professores-mobile"></div>
+
+  <script src="../scripts/QuadroDeHorarios.js"></script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@ let professores = [];
 // buscar todos os professores
 async function buscarProfessores() {
     try {
-        const resposta = await fetch('http://localhost:3000/api/public/professores-public'); 
+        const resposta = await fetch('/api/public/professores-public'); 
         professores = await resposta.json();
         renderizarProfessores();
         criarPaginacao();
@@ -32,7 +32,7 @@ function renderizarProfessores() {
     paginaProfessores.forEach((prof) => {
         const link = document.createElement('a');
         link.className = 'prof-card';
-        link.href = `/pages/telaProfessor.html?id=${prof._id || prof.id}`;
+        link.href = `/pages/TelaProfessor.html?id=${prof._id || prof.id}`;
         link.innerHTML = `<div class="icon">&#128100;</div><p>Prof. ${prof.nome}</p>`; 
         gridContainer.appendChild(link);
     });

@@ -1,0 +1,43 @@
+<!-- Declaração do tipo de documento HTML -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!-- Define a linguagem padrão do documento como português do Brasil -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres para UTF-8, permitindo caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajusta a escala para dispositivos móveis -->
+    <title>Cadastro de Matérias</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="../styles/Materias.css" />
+    <link rel="stylesheet" href="../styles/header-footer-secretaria.css" />
+    <script defer src="../scripts/header-footer-secretaria.js"></script>
+    <!-- Importa o script para a barra de navegação -->
+    <!-- Importa o arquivo CSS externo para estilização da página -->
+  </head>
+  <body>
+
+    <!-- Título e seleção de curso -->
+    <div id="cadastro-materias">
+      <!-- Container para o título e o seletor de curso -->
+      <h2>Cadastro de Matérias</h2>
+      <!-- Título da seção -->
+    </div>
+
+    <!-- Formulário para cadastrar disciplinas -->
+    <form id="formMateria">
+      <input type="text" name="nome" placeholder="Nome da Matéria" required />
+      <input type="number" name="carga" placeholder="Carga Horária" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <div id="mensagem"></div>
+
+    <div id="listaMaterias"></div>
+    <div id="paginacao" class="paginacao"></div>
+
+    <script src="../scripts/Materias.js"></script>
+    <!-- Rodapé da página (vazio por enquanto) -->
+
+  </body>
+</html>
